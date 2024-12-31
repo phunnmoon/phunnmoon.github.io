@@ -149,13 +149,14 @@
 <style type="text/css" id="operaUserStyle"></style></head>
 <body id="rbx-body" dir="ltr" class="rbx-body   dark-theme builder-font" data-performance-relative-value="0.005" data-internal-page-name="Profile" data-send-event-percentage="0">
     
-    <audio autoplay loop id="background-music" src="https://phunnmoon.github.io/backgroundmusic.mp3"></audio>
+    <audio autoplay muted loop id="background-music" src="https://phunnmoon.github.io/backgroundmusic.mp3"></audio>
 
 <script>
     console.log("hurt");
     document.getElementById('background-music').volume = 0.25;
     window.onload = function() {
     document.getElementById('background-music').play();
+    document.getElementById('background-music').muted = false; // Unmute after loading or when user interacts
   };
 </script>
 
