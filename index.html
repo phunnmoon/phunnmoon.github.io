@@ -1,9 +1,678 @@
-<html lang="en"><!--<![endif]--><head data-machine-id="b955423c-d482-c3ce-8ccb-e6b5acbb9054">
-    <!-- MachineID: b955423c-d482-c3ce-8ccb-e6b5acbb9054 -->
-    <style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<html lang="en"><!--<![endif]-->
+    <head data-machine-id="5a96e066-0a11-9ae1-650c-2d0a0fc56609"><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
     <!-- MachineID: 5a96e066-0a11-9ae1-650c-2d0a0fc56609 -->
     <title>( ✦ ) Phunn🌙 - Roblox</title>
-</head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Roblox Corporation">
+<meta name="description" content="KreekCraft is one of the millions creating and exploring the endless possibilities of Roblox. Join KreekCraft on Roblox and explore together!i am so sorry roblox modertator">
+<meta name="keywords" content="free games, online games, building games, virtual worlds, free mmo, gaming cloud, physics engine">
+
+    <meta name="apple-itunes-app" content="app-id=431946152">
+
+
+    <link rel="apple-touch-icon" href="https://images.rbxcdn.com/7c5fe83dffa97250aaddd54178900ea7.png">
+
+
+
+    <meta property="og:site_name" content="Roblox">
+    <meta property="og:title" content="KreekCraft's Profile">
+    <meta property="og:type" content="profile">
+        <meta property="og:url" content="https://www.roblox.com/users/140258990/profile">
+    <meta property="og:description" content="KreekCraft is one of the millions creating and exploring the endless possibilities of Roblox. Join KreekCraft on Roblox and explore together!i am so sorry roblox modertator">
+            <meta property="og:image" content="https://tr.rbxcdn.com/30DAY-Avatar-1EBA49B69DE8F2CFE72C6947F608BB70-Png/352/352/Avatar/Png/noFilter">
+    <meta property="fb:app_id" content="190191627665278">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Roblox">
+    <meta name="twitter:title" content="KreekCraft's Profile">
+    <meta name="twitter:description" content="KreekCraft is one of the millions creating and exploring the endless possibilities of Roblox. Join KreekCraft on Roblox and explore together!i am so sorry roblox modertator">
+    <meta name="twitter:creator">
+            <meta name="twitter:image1" content="https://tr.rbxcdn.com/30DAY-Avatar-1EBA49B69DE8F2CFE72C6947F608BB70-Png/352/352/Avatar/Png/noFilter">
+    <meta name="twitter:app:country" content="US">
+    <meta name="twitter:app:name:iphone" content="Roblox Mobile">
+    <meta name="twitter:app:id:iphone" content="431946152">
+    <meta name="twitter:app:url:iphone">
+    <meta name="twitter:app:name:ipad" content="Roblox Mobile">
+    <meta name="twitter:app:id:ipad" content="431946152">
+    <meta name="twitter:app:url:ipad">
+    <meta name="twitter:app:name:googleplay" content="Roblox">
+    <meta name="twitter:app:id:googleplay" content="com.roblox.client">
+    <meta name="twitter:app:url:googleplay">
+
+<meta ng-csp="no-unsafe-eval">
+
+    <meta name="user-data" data-userid="1880185738" data-name="IlIIlllIlIIlIIlIlIIl" data-displayname="滑稽的小丑人吃含糖糖果滑稽的小丑人吃含糖" data-isunder13="false" data-created="09/10/2020 03:29:01" data-ispremiumuser="false" data-hasverifiedbadge="false">
+
+<meta name="locale-data" data-language-code="en_us" data-language-name="English" data-url-locale="" data-override-language-header="false">
+<meta name="device-meta" data-device-type="computer" data-is-in-app="false" data-is-desktop="true" data-is-phone="false" data-is-tablet="false" data-is-console="false" data-is-android-app="false" data-is-ios-app="false" data-is-uwp-app="false" data-is-xbox-app="false" data-is-amazon-app="false" data-is-win32-app="false" data-is-studio="false" data-is-game-client-browser="false" data-is-ios-device="false" data-is-android-device="false" data-is-universal-app="false" data-app-type="unknown" data-is-chrome-os="false">
+<meta name="environment-meta" data-domain="roblox.com" data-is-testing-site="false">
+
+<meta id="roblox-display-names" data-enabled="true">
+
+<meta name="hardware-backed-authentication-data" data-is-secure-authentication-intent-enabled="true" data-is-bound-auth-token-enabled="true" data-bound-auth-token-whitelist="{&quot;Whitelist&quot;:[{&quot;apiSite&quot;:&quot;auth.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;accountsettings.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;inventory.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;accountinformation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;billing.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;premiumfeatures.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;trades.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;groups.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;adconfiguration.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;ads.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;assetdelivery.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;avatar.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;badges.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;catalog.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;chat.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;chatmoderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;clientsettings.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;contacts.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;contentstore.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;develop.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;economy.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;engagementpayouts.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;followings.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;friends.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;gameinternationalization.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;gamejoin.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;gamepersistence.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;games.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;groupsmoderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},{&quot;apiSite&quot;:&quot;itemconfiguration.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;locale.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;localizationtables.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;metrics.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;moderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;notifications.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;points.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;presence.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;publish.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;privatemessages.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;thumbnailsresizer.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;thumbnails.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;translationroles.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;translations.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;twostepverification.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;},  {&quot;apiSite&quot;:&quot;usermoderation.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;users.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;voice.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;realtimenotifications.roblox.com&quot;,&quot;sampleRate&quot;:&quot;100&quot;}, {&quot;apiSite&quot;:&quot;jQuery&quot;,&quot;sampleRate&quot;:&quot;1000000&quot;}]}" data-bound-auth-token-exemptlist="{&quot;Exemptlist&quot;:[]}" data-hba-indexed-db-name="hbaDB" data-hba-indexed-db-obj-store-name="hbaObjectStore" data-hba-indexed-db-key-name="hba_keys" data-hba-indexed-db-version="1" data-bat-event-sample-rate="500">
+<meta name="account-switching-data" data-is-account-switching-enabled="true">
+
+<meta name="passkey-data" data-is-passkey-login-enabled="true">
+<meta name="passkey-data-android" data-is-passkey-login-enabled-android="true">
+<meta name="page-meta" data-internal-page-name="Profile">
+<meta name="page-retry-header-enabled" data-retry-attempt-header-enabled="True">
+
+
+<link href="https://images.rbxcdn.com/7bba321f4d8328683d6e59487ce514eb" rel="icon">
+
+
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="StyleGuide" data-bundle-source="Main" href="https://css.rbxcdn.com/4b6b27d98e2c26f64ae53c2073ae9be982e055657a26519bbf962a21e0abec29.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Builder" data-bundle-source="Main" href="https://css.rbxcdn.com/8fa43545250dfbd7d96d164fe24e886391fdccc9b87b0dc91ce78933aebcda43.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ColorUpdate" data-bundle-source="Main" href="https://css.rbxcdn.com/ee28971676a567b860083dce179cc0fdcdb7407f698f36beec29e9fdcd9a6af4.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Thumbnails" data-bundle-source="Main" href="https://css.rbxcdn.com/d8d1cfe6a81efdc0eaa7a64ddeec42230944f4e6330e5eafafcda10cf9e5286a.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="CaptchaCore" data-bundle-source="Main" href="https://css.rbxcdn.com/b8f8f15a57a66e73469ae72eea7d8905346afa78b9f2397627cd099f7dcc779a.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="EmailVerifyCodeModal" data-bundle-source="Main" href="https://css.rbxcdn.com/66b2fd496e668938e3b0e2d9a0c12f9f88c3a1a4974608f69059d8061fc0141f.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Challenge" data-bundle-source="Main" href="https://css.rbxcdn.com/76213958cdc4d91524bf7bd4db57ab8097891dccc04dff60d7f3d103861554c6.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="VerificationUpsell" data-bundle-source="Main" href="https://css.rbxcdn.com/c56998f707ed8eb87cbfe169758e4bf5ec378d807483904507f8562ad5b64835.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="RobloxBadges" data-bundle-source="Main" href="https://css.rbxcdn.com/da45920fef8b22d35ee6cce0702d290241252fbfd99695e2abc0934d20de0974.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccountSwitcher" data-bundle-source="Main" href="https://css.rbxcdn.com/8f55fef5030e6e8f107be51f3320159f08682b053aee5e9f4bcdf7b9327cc957.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="PriceTag" data-bundle-source="Main" href="https://css.rbxcdn.com/9bfc48ea40a698035ea8cbe3d3e94bd06d3aac48969bedceb6d8ba5ff17ff84d.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Navigation" data-bundle-source="Main" href="https://css.rbxcdn.com/cd18c6ebf050969d1847bcc2b61260be8e334ce4a192073aae0fcd19b5fa1520.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="CookieBannerV3" data-bundle-source="Main" href="https://css.rbxcdn.com/2c2a709240897ce382b7ff55be4347cd0994ab1e2d6ed3b56649e54b0e97e13a.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Footer" data-bundle-source="Main" href="https://css.rbxcdn.com/12cb426f1649d8c5573f65f01b0e69618bd31ed9dbbf7be213d742200307601f.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ConfigureWebApps" data-bundle-source="Main" href="https://css.rbxcdn.com/08def520152a575438e73a81aa9a310c2415c327df7b624a24aa6e794d24dba3.css">
+
+    <link rel="canonical" href="https://www.roblox.com/users/140258990/profile">
+    
+
+    <link rel="alternate" href="https://www.roblox.com/users/140258990/profile" hreflang="x-default">
+    <link rel="alternate" href="https://www.roblox.com/de/users/140258990/profile" hreflang="de">
+    <link rel="alternate" href="https://www.roblox.com/es/users/140258990/profile" hreflang="es">
+    <link rel="alternate" href="https://www.roblox.com/fr/users/140258990/profile" hreflang="fr">
+    <link rel="alternate" href="https://www.roblox.com/id/users/140258990/profile" hreflang="id">
+    <link rel="alternate" href="https://www.roblox.com/it/users/140258990/profile" hreflang="it">
+    <link rel="alternate" href="https://www.roblox.com/ja/users/140258990/profile" hreflang="ja">
+    <link rel="alternate" href="https://www.roblox.com/ko/users/140258990/profile" hreflang="ko">
+    <link rel="alternate" href="https://www.roblox.com/pl/users/140258990/profile" hreflang="pl">
+    <link rel="alternate" href="https://www.roblox.com/pt/users/140258990/profile" hreflang="pt">
+    <link rel="alternate" href="https://www.roblox.com/th/users/140258990/profile" hreflang="th">
+    <link rel="alternate" href="https://www.roblox.com/tr/users/140258990/profile" hreflang="tr">
+    <link rel="alternate" href="https://www.roblox.com/vi/users/140258990/profile" hreflang="vi">
+
+    
+<link onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" rel="stylesheet" href="https://static.rbxcdn.com/css/leanbase___fb0c7d1e28371fc5e8367ce241b98d69_m.css/fetch">
+
+
+    
+<link onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" rel="stylesheet" href="https://static.rbxcdn.com/css/page___b4a7af283fdf81b764457f8cb4799ee4_m.css/fetch">
+
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccountSecurityPrompt" data-bundle-source="Main" href="https://css.rbxcdn.com/ae8f08c1a7c275ec7fe4597d3b363a2349700445742e4e43e6b9d6177c28e868.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccessManagementUpsellV2" data-bundle-source="Main" href="https://css.rbxcdn.com/9e359afacbf43adae364437d6c7671f1f7f616d62e584e5a03c08a3db28ac08b.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="SocialLinksJumbotron" data-bundle-source="Main" href="https://css.rbxcdn.com/467f43bdbf273ff37c4627800d0f7170b246ff19ce420efe75b7c16dd9f840a7.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="PeopleList" data-bundle-source="Main" href="https://css.rbxcdn.com/4cceeaaeb8e3c6f232aab58c2d641ad599c2e19313d9dfc88cb02d8511421dcc.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Aliases" data-bundle-source="Main" href="https://css.rbxcdn.com/1f4a9ebab8bc0b482954036664da35474d7b3a4e087898b0c77fa6f5a9b3a414.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="GroupsList" data-bundle-source="Main" href="https://css.rbxcdn.com/d35986719eb3ab7bbccbbaf01bae69a4921f1715f539717dae9e055cd0491853.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Captcha" data-bundle-source="Main" href="https://css.rbxcdn.com/4c3fec0ce872f94f2c2be18e6fd016e43fdc4ccecad591cdaa3a63116f512178.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="FriendsCarousel" data-bundle-source="Main" href="https://css.rbxcdn.com/3b52cb8ac873496f1b58c2240f0f1149633f3382fedd42594c61da90f803df66.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="UserDescription" data-bundle-source="Main" href="https://css.rbxcdn.com/fdbc0173245f68440cbb311624eb6859d2e4024b89281763b7323e318a19c4c0.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ProfileHeader" data-bundle-source="Main" href="https://css.rbxcdn.com/ac40f6189db79fc54cbe36bfd5f83ecaa6d28d379a5c0dbe65dbdac0f80cb5ad.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ProfilePosts" data-bundle-source="Main" href="https://css.rbxcdn.com/feca6c76ae9c4a10289637ffacf863fe5ce27515d5b960dceda0f80685892c1a.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="CurrentWearing" data-bundle-source="Main" href="https://css.rbxcdn.com/cc693776e7662b9afb39b185b252b4f5e8cfb19436bf079b0bc6e2e970112c9d.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ProfileBadges" data-bundle-source="Main" href="https://css.rbxcdn.com/330f39c0655c2577e0bb0ccef4d6c0902340f8103db3ab37f599b8dc35e1c7db.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ProfileStatistics" data-bundle-source="Main" href="https://css.rbxcdn.com/b52536edd49882b6c7ffbb39e44d25c8f3a96eceb0bf94b4413e6ae9f6e2477b.css">
+
+    <link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="RobuxIcon" data-bundle-source="Main" href="https://css.rbxcdn.com/70a9b96d26cf93544ef5fca7ea783f537d9e57c8e9ba395f1dfb57b090d87eff.css">
+
+
+    <link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ItemPurchaseUpsell" data-bundle-source="Main" href="https://css.rbxcdn.com/3c4bd9b17b9020d9ebc87d4542a68a949a9de6150a55a92f0e65514520ee777e.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="ItemPurchase" data-bundle-source="Main" href="https://css.rbxcdn.com/0fd144dfddc01ac3e7993d0305a56cf1027a2aed388c9be44c0d37f565b93048.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="IdVerification" data-bundle-source="Main" href="https://css.rbxcdn.com/3bca47a98d58fdf98a7063c4f3b390671e5326ed559813887f3945876c997da6.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="AccessManagementUpsell" data-bundle-source="Main" href="https://css.rbxcdn.com/d45e200658a1343116bbf4a88c367d093758085e7d001918d641c85b2143468f.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="GameLaunch" data-bundle-source="Main" href="https://css.rbxcdn.com/c5373f0dced8d7be7bb3ad1b978fb8af776157fcc41ad3d5c92d725063c2e6e1.css">
+
+
+    
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="NotificationStream" data-bundle-source="Main" href="https://css.rbxcdn.com/ed5124f714c2f7b092775a5c5659693a831091a7bdd587b92cbfc55a6c7320e6.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="SendrNotificationStream" data-bundle-source="Main" href="https://css.rbxcdn.com/da6dc624812880720c3733ae43c523be7ed7940949374bf437b7faa0f474eae6.css">
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="Chat" data-bundle-source="Main" href="https://css.rbxcdn.com/25398c45c5be470e700342f2202b679a02a1c2f86e92ab7e5104de9c0e0761f3.css">
+
+
+
+<link rel="stylesheet" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-bundlename="UserAgreementsChecker" data-bundle-source="Main" href="https://css.rbxcdn.com/d5a3728b78be729b693aadf79a1f45f0fa49c15fe863a0d7dd631b75f9e82207.css">
+
+
+
+  
+
+
+<meta name="roblox-tracer-meta-data" data-access-token="" data-service-name="Web" data-tracer-enabled="false" data-api-sites-request-allow-list="friends.roblox.com,chat.roblox.com,thumbnails.roblox.com,games.roblox.com,gameinternationalization.roblox.com,localizationtables.roblox.com" data-sample-rate="0" data-is-instrument-page-performance-enabled="false"><script type="text/javascript" onerror="Roblox.BundleDetector &amp;&amp; Roblox.BundleDetector.reportBundleError(this)" data-monitor="true" data-bundlename="RobloxTracer" data-bundle-source="Main" src="https://js.rbxcdn.com/2ad6b2753f8558f55fc35440842b58f6a8f74b40879dd503fa8394beac7d3370.js"></script>
+
+
+
+
+
+
+
+<meta name="thumbnail-meta-data" data-is-webapp-cache-enabled="False" data-webapp-cache-expirations-timespan="00:01:00" data-request-min-cooldown="1000" data-request-max-cooldown="30000" data-request-max-retry-attempts="4" data-request-batch-size="100" data-thumbnail-metrics-sample-size="20" data-concurrent-thumbnail-request-count="4">
+                          
+
+<style data-jss="" data-meta="makeStyles">
+.jss1 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss2 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss3 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss4 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss5 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss6 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss7 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss8 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss9 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss10 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss11 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss12 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss13 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss14 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss15 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss16 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss17 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss18 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss19 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss20 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss21 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss22 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss23 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss24 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss25 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss26 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss27 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss28 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss29 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss30 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss31 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss32 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss33 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss34 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss35 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss36 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss37 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss38 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss39 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss40 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss41 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss42 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss43 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss44 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss45 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss46 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss47 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss48 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss49 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss50 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss51 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss52 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss53 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss54 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss55 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss56 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss57 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss58 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss59 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss60 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss61 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss62 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss63 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss64 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss65 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss66 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss67 {
+  display: inline-block;
+  position: relative;
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.jss68 {
+  width: 28px;
+  height: 28px;
+  margin-bottom: -3x;
+}
+.jss69 {
+  width: min-content;
+  height: calc(28px * 1.4);
+  display: inline-block;
+  font-size: 28px;
+  max-width: calc(100% - (28px + 8px));
+  font-style: normal;
+  font-family: "HCo Gotham SSm", san-serif;
+  line-height: 140%;
+  text-decoration: none;
+}
+.jss70 {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss71 {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.jss72 {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+</style></head>
 <body id="rbx-body" dir="ltr" class="rbx-body   dark-theme builder-font" data-performance-relative-value="0.005" data-internal-page-name="Profile" data-send-event-percentage="0">
     
     <meta name="csrf-token" data-token="x9zZPtEAFAbB">
